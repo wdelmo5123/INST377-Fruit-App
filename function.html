@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Fruit Lookup - DRAFT</title>
+        <link rel="stylesheet" href="fruitdesigns.css">
+        <script src="fruitfunctions.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+
+    <body>
+        <h1 id="header">Fruit Lookup - DRAFT</h1>
+
+        <nav>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="function.html">Function</a></li>
+        </nav>
+        
+        <br>
+
+        <div class="form">
+            <h2 id="fruittitle">Let's Lookup Some Fruit!</h2>
+
+            <form id="Lookup">
+                <label for="name">Fruit Name:</label>
+                <input id="name" type="text" required>
+                <br>
+                <br>
+                <button id="button" onclick="fruitnutrients(); return false">Get Fruit!</button>
+            </form>
+        </div>
+
+        <div style="width: 100%;">
+            <canvas id="nutritionchart"></canvas>
+        </div>
+    </body>
+</html>
