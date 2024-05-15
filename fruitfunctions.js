@@ -37,6 +37,12 @@ function fruitnutrients() {
                     y: {
                         beginAtZero: true
                     }
+                },
+                plugins: {
+                    title: {
+                        display: true,
+                        text: `Nutritional Facts of ${fruitname}s`
+                    }
                 }
             }
         });
