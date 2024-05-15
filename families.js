@@ -11,6 +11,7 @@ function famSelect() {
             data.forEach(fruit => {
                 fruitFam.add(fruit.family);
             });
+            //sort
             const sortedFruitFam = [...fruitFam].sort((a, b) => a.localeCompare(b));
             sortedFruitFam.forEach(familyType => {
                 const option = document.createElement('option');
@@ -88,7 +89,7 @@ document.getElementById('submitFruit').addEventListener('click', function(event)
             .then(resp => resp.json())
             .then(data => {
                 const table = document.getElementById('searchTable');
-                table.innerHTML = ''; // Clear previous content
+                table.innerHTML = ''; 
 
                 if (data.name) {
                     const row = makeRows(data);
