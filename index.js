@@ -5,7 +5,7 @@ const parser = require('body-parser')
 const app = express()
 const port = 3000
 app.use(parser.json())
-app.use(express.static(__dirname + '/public/'));
+app.use(express.static(__dirname + '/public'));
 
 const url = 'https://oybduybmitwmehjkpayz.supabase.co'
 const key = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95YmR1eWJtaXR3bWVoamtwYXl6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTU3MzA0OTIsImV4cCI6MjAzMTMwNjQ5Mn0.Qt-elaT-FCzFJ4OQRfJyhDBxehfgIraudf4Mxm8C9Mg'

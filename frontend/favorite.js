@@ -1,10 +1,5 @@
 async function loadPeopleData() {
-    var host = window.location.origin;
-
-    console.log(host)
-    console.log('working from async')
-
-    await fetch('http://127.0.0.1:3000/fruits')
+    await fetch(`http://127.0.0.1:3000/fruits`)
         .then((res) => res.json())
         .then((res) => {
             console.log(res)
@@ -62,7 +57,7 @@ async function loadPeopleData() {
 
             const preExistingTable = document.getElementById('personInfo')
             if(preExistingTable) {
-                preExistingTable.remove
+                preExistingTable.remove()
             }
             var cutoff = document.getElementById('cutoff')
             cutoff.insertAdjacentElement('beforebegin', table)
@@ -73,7 +68,7 @@ async function loadPeopleData() {
 
 async function createFavFruit() {
     console.log('creating person')
-    await fetch('http://127.0.0.1:3000/fruit', {
+    await fetch(`http://127.0.0.1:3000/fruit`, {
         method: 'POST',
         body: JSON.stringify({
             "first": `${document.getElementById('first').value}`,
