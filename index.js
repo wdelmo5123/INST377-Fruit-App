@@ -31,10 +31,11 @@ app.post('/fruit', async (req, res) => {
     var first = req.body.first
     var last = req.body.last
     var fruit = req.body.fruit
+    var email = req.body.email
 
     const { data, error } = await supabase
         .from('Fruit')
-        .insert({ 'first_name': first, 'last_name': last, 'favorite_fruit': fruit})
+        .insert({ 'first_name': first, 'last_name': last, 'favorite_fruit': fruit, 'email_address': email})
         .select()
     if(error) {
         console.log("Error")
