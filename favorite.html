@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Favorite Fruit</title>
+        <script type="text/javascript" src="favorite.js" defer></script>
+        <link rel="stylesheet" href="fruitfam.css">
+
+    </head>
+
+    <body>
+        <h1 id="header">Add Your Favorite Fruit!</h1>
+
+        <nav>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="function.html">Fruit Chart</a></li>
+            <li><a href="families.html">Fruits</a></li>
+            <li><a href="favorite.html">Favorite Fruits</a></li>
+
+        </nav>
+
+        <h1>People's Favorite Fruit!</h1>
+        <form onsubmit="createFavFruit(); return false;">
+            <label for="first">First Name:</label>
+            <input type="text" id="first">
+            <br>
+            <br>
+
+
+            <label for="last">Last Name:</label>
+            <input type="text" id="last">
+
+            <br>
+            <br>
+
+
+            <label for="fruit">Favorite Fruit:</label>
+            <input type="text" id="fruit">
+            <br>
+            <br>
+
+            <label for="email">Email Address:</label>
+            <input type="text" id="email">
+            <br>
+            <br>
+
+            <input type="submit" name="Add Fruit">
+            <hr>
+
+        </form>
+        <div id="cutoff"></div>
+      
+
+    </body>
+</html>

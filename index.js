@@ -11,6 +11,11 @@ const url = 'https://oybduybmitwmehjkpayz.supabase.co'
 const key = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95YmR1eWJtaXR3bWVoamtwYXl6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTU3MzA0OTIsImV4cCI6MjAzMTMwNjQ5Mn0.Qt-elaT-FCzFJ4OQRfJyhDBxehfgIraudf4Mxm8C9Mg'
 const supabase = client.createClient(url, key)
 
+app.get('', (req, res) => {
+    console.log('it has loaded')
+    res.sendFile('/favorite.html', { root: __dirname })
+});
+
 app.get('/fruits', async (req, res) => {
     console.log('Getting All Users')
 
