@@ -12,7 +12,7 @@ const key = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZi
 const supabase = client.createClient(url, key)
 
 app.get('/', (req, res) => {
-    res.sendFile('frontend/favorite.html', { root: __dirname })
+    res.sendFile('public/favorite.html', { root: __dirname })
 })
 
 app.get('/fruits', async (req, res) => {
