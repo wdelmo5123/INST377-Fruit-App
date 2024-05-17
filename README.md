@@ -17,4 +17,6 @@ The Fruit App is designed with compatibility and user experience in mind, ensuri
 
 4. Safari: As the default browser for macOS, Safari is optimized for Apple devices, offering excellent performance, energy efficiency, and strong privacy protections. Supporting Safari ensures that Mac users can seamlessly access The Fruit App with the same high standards of performance and usability.
 
-In designing The Fruit App, we have implemented rigorous testing across these browsers to ensure that all features, from browsing fruit information to interactive elements, work flawlessly. This cross-browser compatibility ensures that regardless of the user's choice of browser, they will have a consistent, engaging, and informative experience. By focusing on these major browsers, we aim to reach a wide audience, providing educational content on fruit nutrition and promoting healthy eating habits effectively..
+In designing The Fruit App, we have implemented rigorous testing across these browsers to ensure that all features, from browsing fruit information to interactive elements, work flawlessly. This cross-browser compatibility ensures that regardless of the user's choice of browser, they will have a consistent, engaging, and informative experience. By focusing on these major browsers, we aim to reach a wide audience, providing educational content on fruit nutrition and promoting healthy eating habits effectively.
+
+Link to developer manual: https://docs.google.com/document/d/1Rlwr40XFlk077WhEhhJK0qR9hyWi-4U_b_TiIPLFuro/edit?usp=sharing
