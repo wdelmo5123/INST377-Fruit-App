@@ -1,5 +1,7 @@
+var host = window.location.origin
+
 async function loadPeopleData() {
-    await fetch(`http://127.0.0.1:3000/fruits`)
+    await fetch(`${host}/fruits`)
         .then((res) => res.json())
         .then((res) => {
             console.log(res)
@@ -68,7 +70,7 @@ async function loadPeopleData() {
 
 async function createFavFruit() {
     console.log('creating person')
-    await fetch(`http://127.0.0.1:3000/fruit`, {
+    await fetch(`${host}/fruit`, {
         method: 'POST',
         body: JSON.stringify({
             "first": `${document.getElementById('first').value}`,
